@@ -2,6 +2,7 @@
 
 # Import the theme
 theme: jekyll-theme-chirpy
+
 jekyll_compose:
   default_front_matter:
     drafts:
@@ -165,7 +166,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: ""
+baseurl:
 
 # ------------ The following options are not recommended to be modified ------------------
 
