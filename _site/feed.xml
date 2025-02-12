@@ -1,0 +1,68 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://localhost:4000/</id>
+  <title>Lone</title>
+  <subtitle>Technical writing, hope you like it.</subtitle>
+  <updated>2025-02-12T13:59:30+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+  <rights> © 2025  </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Test-post</title>
+    <link href="http://localhost:4000/posts/test-post/" rel="alternate" type="text/html" title="Test-post" />
+    <published>2025-02-12T13:34:00+01:00</published>
+  
+    <updated>2025-02-12T13:34:00+01:00</updated>
+  
+    <id>http://localhost:4000/posts/test-post/</id>
+    <content type="text/html" src="http://localhost:4000/posts/test-post/" />
+    <author>
+      <name>lone</name>
+    </author>
+
+  
+    
+    <category term="HackTheBox" />
+    
+  
+
+  <summary>Inital access
+
+From the nmap scan we can see that there are mutliples ports open.
+In this case we will focus on the port 445 (smb):
+
+
+
+Using smbclient we can list the shares available:
+
+netexec smb &amp;quot;10.10.11.35&amp;quot; -u guest -p &amp;#39;&amp;#39; --shares 
+
+
+
+
+Using the following command, the list of the readable shares is returned:
+
+netexec smb &amp;quot;10.10.11.35&amp;quot; -u guest -p &amp;#39;&amp;#39; --shares --filter-shares READ WRITE
+
+
+
+
+...</summary>
+
+  </entry>
+
+</feed>
+
+
